@@ -5,8 +5,21 @@ package br.com.ricardolonga;
  * Tente separar as responsabilidades em novas classes.
  */
 public class PlayerController {
+
+
+    public void botaoClicado(String botao) {
+        if ("play".equalsIgnoreCase(botao)) {
+            play();
+        } else if ("pause".equalsIgnoreCase(botao)) {
+            pause();
+        } else if ("stop".equalsIgnoreCase(botao)) {
+            stop();
+        } else {
+            throw new UnsupportedOperationException("Botão desconhecido.");
+        }
+    }
     
-    public void play() {
+    private void play() {
         /*
          * Vamos supor que neste método tenhamos muitas linhas de código...
          */
@@ -15,8 +28,8 @@ public class PlayerController {
          * Vamos supor que neste método tenhamos muitas linhas de código...
          */
     }
-    
-    public void pause() {
+
+    private void pause() {
         /*
          * Vamos supor que neste método tenhamos muitas linhas de código...
          */
@@ -25,8 +38,8 @@ public class PlayerController {
          * Vamos supor que neste método tenhamos muitas linhas de código...
          */
     }
-    
-    public void stop() {
+
+    private void stop() {
         /*
          * Vamos supor que neste método tenhamos muitas linhas de código...
          */
@@ -35,15 +48,5 @@ public class PlayerController {
          * Vamos supor que neste método tenhamos muitas linhas de código...
          */
     }
-    
-    public void record() {
-        /*
-         * Vamos supor que neste método tenhamos muitas linhas de código...
-         */
-        System.out.println("Realizando a gravação...");
-        /*
-         * Vamos supor que neste método tenhamos muitas linhas de código...
-         */
-    }
-    
+
 }

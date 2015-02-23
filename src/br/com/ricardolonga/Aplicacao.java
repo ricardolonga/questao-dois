@@ -5,10 +5,9 @@ public class Aplicacao {
     public static void main(String[] args) {
         PlayerController playerController = new PlayerController();
         
-        playerController.play();
-        playerController.pause();
-        playerController.stop();
-        playerController.record();
+        playerController.botaoClicado("play");
+        playerController.botaoClicado("pause");
+        playerController.botaoClicado("stop");
     }
     
 }
